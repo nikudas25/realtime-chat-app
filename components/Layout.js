@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import Head from 'next/head';
-import Link from 'next/link';
 
 export default function Layout({ children }){
     return (
@@ -8,11 +7,13 @@ export default function Layout({ children }){
             <Head>
                 <title>Realtime Chat App</title>
 
-                <link>
+                <link
                 rel = "stylesheet"
                 href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-                </link>
+                />
+                
             </Head>
+            {children}
         </Fragment>
-    )
+    );
 }
